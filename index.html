@@ -17,31 +17,44 @@
 </head>
 <body>
     <div class="container">
-        <h1>Student Management CRUD</h1>
+        <h3>New Employees</h3>
         <div class="input">
-            <input type="text" placeholder="Name" id="name">
-            <input type="email" placeholder="Email" id="email" name="email" required>
-            <input type="number" placeholder="GPA" id="grade">
-            <input type="number" placeholder="Age" id="age">
-            <input type="text" placeholder="Degree" id="degree">
+            <div>
+                <label for="name">Enter Name</label>
+                <input type="text"  id="name" name="name">
+            </div>
+
+            <div>
+                <label for="profession">Enter Profession</label>
+                <input type="text" id="email" name="profession">
+            </div>
+
+            <div>
+                <label for="age">Enter Age</label>
+                <input type="text"  id="age" name="age">
+            </div>
+            <!-- <input type="number" placeholder="Age" id="age">
+            <input type="text" placeholder="Degree" id="degree"> -->
         </div>
-    
-        <div class='btn'>
-            <button type="submit" id="submit" onclick="addStudentRecord()">Add Student</button>
-        </div>
+        
+
+        <button type="submit" id="submit" onclick="addStudentRecord()">Add User</button>
+
+        <p id="error"></p>
+
+        <p id="success"></p>
 
     
-        <input class="searchStudent" type="text" id="search" onkeyup="searchStudent()" placeholder="Search By Name, email or Degree">
+        <!-- <input class="searchStudent" type="text" id="search" onkeyup="searchStudent()" placeholder="Search By Name, email or Degree"> -->
 
-        <table class="table" id="table">
+        <table class="table" id="table" border="0">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Student Name</th>
                     <th>Email</th>
                     <th>Age</th>
-                    <th>GPA</th>
-                    <th>Degree</th>
+                    <!-- <th>GPA</th> -->
                 </tr>
             </thead>
     
